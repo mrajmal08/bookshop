@@ -1,3 +1,13 @@
+<?php
+
+if(isset($_POST['submit'])){
+
+    var_dump($_POST); exit;
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +24,7 @@
 <div class="breadcrumb-wrapper">
 <h2 class="product-title">Login</h2>
 <ol class="breadcrumb">
-<li><a href="index-2.html">Home /</a></li>
+<li><a href="index.php">Home /</a></li>
 <li class="current">Login</li>
 </ol>
 </div>
@@ -32,7 +42,7 @@
 <h3>
 Login Now
 </h3>
-<form role="form" class="login-form">
+<form role="form" method="post" class="login-form">
 <div class="form-group">
 <div class="input-icon">
 <i class="lni-user"></i>
@@ -42,7 +52,7 @@ Login Now
 <div class="form-group">
 <div class="input-icon">
 <i class="lni-lock"></i>
-<input type="password" class="form-control" placeholder="Password">
+<input type="password" name="password"  class="form-control" placeholder="Password">
 </div>
 </div>
 <div class="form-group mb-3">
@@ -53,7 +63,7 @@ Login Now
 <a class="forgetpassword" href="forgot-password.php">Forgot Password?</a>
 </div>
 <div class="text-center">
-<button class="btn btn-common log-btn">Submit</button>
+<button type="submit" name="submit" class="btn btn-common log-btn">Submit</button>
 </div>
 </form>
 </div>

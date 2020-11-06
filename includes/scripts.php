@@ -12,3 +12,4 @@
 <script src="assets/js/form-validator.min.js"></script>
 <script src="assets/js/contact-form-script.min.js"></script>
 <script src="assets/js/summernote.js"></script>
+<script src="assets/js/script.js"></script>
